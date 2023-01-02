@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: seashell;
+  /* background-image: linear-gradient(lightblue, pink); */
+  color: black;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+article {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 2em;
+  width: 100%;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  width: 100%;
+  border: 5px solid black;
+  text-align: center;
+  color: white;
+  background-color: #181d31;
+  padding: 1rem;
+}
+h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+section {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.sectionBtn {
+  font: inherit;
+  width: 3.5em;
+  margin: 0.1em;
+  background-color: #263159;
+  color: #fffbeb;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+button {
+  font: inherit;
+  width: 7em;
+  margin: 0.1em;
+  background-color: #263159;
+  color: #fffbeb;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+button:hover {
+  background-color: #4f66ba;
+  transition-property: background-color transform;
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+#save-btn {
+  background-color: #495579;
+  border-radius: 15px;
+}
+
+#save-btn:hover {
+  background-color: rgb(253, 208, 154);
+  border-radius: 15px;
+}
+#previousEntry {
+  font: inherit;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-top: 1em;
+}

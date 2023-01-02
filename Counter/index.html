@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <h1>Counter</h1>
+    <article>
+        <h2 id="counter-num">0</h2>
+        <section>
+            <button id="increment-btn" class="sectionBtn" onclick="increment()">⬆</button>
+            <button id="decrement-btn" class="sectionBtn" onclick="decrement()">⬇</button>
+        </section>
+        <button id="save-btn" onclick="save() ,reset()">save</button>
+        <button id="reset-btn" onclick="reset()">reset</button>
+        <p id="previousEntry">Previous Entry:</p>
+        <p id="dataEntry">----NIL----</p>
+        <button id="clear-btn" onclick="reset(),cleaar()">clear</button>
+    </article>
+    <!-- <script src="js/index.js"></script> -->
+</body>
+
+</html>

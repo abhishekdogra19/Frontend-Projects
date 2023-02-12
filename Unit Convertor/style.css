@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1c1c1c;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+#Whole {
+  width: 550px;
+  height: 729px;
+  background-color: #1f2937;
+}
+#inputConatiner {
+  background-color: #6943ff;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  width: 100%;
+  height: 285px;
+}
+#inputConatiner h2 {
+  margin: 33px 50.6px 30px 51px;
+  line-height: 38px;
+  letter-spacing: -3%;
+  font-size: 24.4px;
+}
+#input-el {
+  font-size: 58px;
+  width: 117px;
+  height: 83px;
+  border: 2px solid #b295ff;
+  margin: 0px auto 25px;
+  background-color: #6943ff;
+  color: #fff;
+  line-height: 24.4px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+#convert-btn {
+  border-radius: 5px;
+  width: 117px;
+  height: 42px;
+  margin: 0 auto 34px;
+  font-size: 1em;
+  padding: 9px 27.5px;
+  line-height: 24px;
+}
+
+#outputContainer {
+  background-color: #1f2937;
+}
+.outBlock {
+  background-color: #273549;
+  width: 500px;
+  height: 108.57px;
+  margin: 23.4px auto;
+  text-align: center;
+  padding: 31px 77px 18.57px;
+}
+.outHead {
+  color: #ccc1ff;
+  margin-bottom: 9px;
+  line-height: 20px;
+}
+#outFirstBlock {
+  margin-top: 36px;
+}
+#outLastBlock {
+  margin-bottom: 35.43px;
+}
+.pEl {
+  font-size: 14px;
+  line-height: 20px;
+}

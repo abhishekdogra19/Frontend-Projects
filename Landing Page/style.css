@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #d6dee3;
+  color: #000;
+  padding: 0 20px;
+  min-height: 75px;
+}
+a {
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+}
+a :visited {
+  font-weight: 300;
+  text-decoration: none;
+  color: #757575;
+}
+.links:hover {
+  transform: translateY(50%);
+  transition: all 0.5s ease-in-out;
+}
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60vw;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 35vw;
+}
+ul,
+ol {
+  list-style: none;
+}
+main {
+  /* background-color: aquamarine; */
+  background-color: #f0f5f9;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.inputBox {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 200px;
+  margin-top: 75px;
+  padding: 30px;
+}
+.inputBox h2 {
+  margin-bottom: 20px;
+}
+.inputBox form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+form #name {
+  margin-bottom: 1em;
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+form #submit {
+  margin-bottom: 1em;
+  max-width: 150px;
+  width: 100%;
+  margin: 15px 0;
+}
+.pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 125px;
+}
+.details {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80vw;
+  height: 125px;
+  padding: 5px;
+}
+.companyFeatures {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#priceArea {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-image: linear-gradient(180deg, #040882, #000);
+  padding: 25px;
+}
+.priceBox {
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  background-image: linear-gradient(-180deg, #f0f5f9 20%, #040882 95%);
+  border-radius: 40px;
+  color: #000;
+}
+
+footer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+.owner {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#fUL {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#fUL > li {
+  margin-left: 10px;
+}
+.bDesign {
+  background-image: url("design/bottomWave.svg");
+  width: 100%;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#allFeatures {
+  scroll-margin: 10em;
+  width: 1000px;
+  margin: 0 auto;
+}
+.headingPrice {
+  padding: 20px 10px;
+  border-radius: 30px 30px 0 0;
+  background-color: #000000;
+  color: #f4eeff;
+  font-size: 1.5em;
+}
+.priceBox > h4 {
+  font-size: 2em;
+  margin: 20px auto;
+}
+.priceBox--ol {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+button {
+  margin: 20px 0;
+  background-color: #f1c40f;
+  padding: 0 40px;
+  height: 40px;
+  font: inherit;
+  font-size: 1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 15px;
+}
+#videoContent {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px;
+  background-color: #040882;
+  color: white;
+}
+#vDiv {
+  width: 40vw;
+}
+#pDiv {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  width: 40vw;
+}
+#submit {
+  padding: 4px 10px;
+  font-size: 1.2em;
+  background-color: #f1c40f;
+  font-weight: bolder;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+#pDiv > p {
+  line-height: 1.75em;
+}
+#pDiv > h1 {
+  letter-spacing: 2px;
+  line-height: 1.75em;
+}
+.Nwrap {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 481px) {
+  body {
+    width: 100%;
+    font-size: 1em;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    padding-right: 20px;
+  }
+  #priceArea {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .inputBox > h2 {
+    text-align: center;
+    padding: 10px;
+  }
+  form #name {
+    width: 275px;
+    padding-left: 1px;
+  }
+  #priceArea {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1em;
+    margin: 10px 0;
+  }
+  #allFeatures {
+    margin: 2em 0;
+    width: 100%;
+  }
+  .companyFeatures {
+    margin: 2em 0;
+    width: 100%;
+  }
+  .pic {
+    width: 20vw;
+    padding-left: 12px;
+  }
+
+  .details {
+    width: 60vw;
+  }
+  .bDesign {
+    background-size: cover;
+    margin-bottom: -1px;
+    width: 100%;
+    height: 90px;
+  }
+  #videoContent {
+    flex-flow: column;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  #vDiv {
+    width: 100%;
+    padding: 2px;
+  }
+  iframe {
+    width: 100%;
+    height: 50%;
+  }
+  #pDiv {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 482px) and (max-width: 768px) {
+  body {
+    width: 100%;
+    font-size: 1em;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    padding-right: 20px;
+  }
+  #priceArea {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  .logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    margin-top: 10px;
+  }
+  .inputBox > h2 {
+    text-align: center;
+    padding: 10px;
+  }
+  form #name {
+    width: 275px;
+    padding-left: 1px;
+  }
+  #priceArea {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 2em;
+    margin: 10px 0;
+  }
+  #allFeatures {
+    margin: 2em 0;
+    width: 100%;
+  }
+  .companyFeatures {
+    margin: 2em 0;
+    width: 100%;
+  }
+  .pic {
+    width: 20vw;
+    padding-left: 12px;
+  }
+
+  .details {
+    width: 60vw;
+  }
+  .bDesign {
+    background-size: cover;
+    margin-bottom: -1px;
+    width: 100%;
+    /* height: 90px; */
+  }
+  #videoContent {
+    flex-flow: column;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  #vDiv {
+    width: 100%;
+    padding: 2px;
+  }
+  iframe {
+    width: 100%;
+  }
+  #pDiv {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .bDesign {
+    background-size: cover;
+    height: 40em;
+    margin-bottom: -1px;
+  }
+  #videoContent {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 50px;
+  }
+  #vDiv {
+    width: 30vw;
+  }
+  footer {
+    width: 100%;
+    margin: 0 20px 0 auto;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .bDesign {
+    background-size: cover;
+    margin: 0;
+  }
+  footer {
+    width: 100%;
+    margin: 0 20px 0 auto;
+  }
+  #videoContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px;
+  }
+  #vDiv {
+    width: 40vw;
+  }
+}

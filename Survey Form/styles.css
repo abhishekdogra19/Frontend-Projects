@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+body {
+  background: fixed;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  height: 100vh;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0.25rem;
+}
+header {
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+#description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+main {
+  width: 700px;
+  font-size: 1.125rem;
+}
+form {
+  background-color: var(--color-darkblue-alpha);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 2.5rem;
+  font: inherit;
+}
+label {
+  display: block;
+}
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.325em;
+  font-family: inherit;
+}
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.form-option {
+  padding: 0.5rem;
+}
+.input-checkbox {
+  margin: 0.5rem;
+}
+.input-textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+#submit {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font: inherit;
+  padding: 0.5rem;
+}
+.input-radio {
+  font: inherit;
+  margin-right: 1rem;
+}

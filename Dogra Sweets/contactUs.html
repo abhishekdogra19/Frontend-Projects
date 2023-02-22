@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/Images/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <article class="offscreen-article">
+      <p id="top" class="offscreen">hi</p>
+    </article>
+    <header>
+      <h1 id="top" class="header__heading">Contact Us</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/#about">About DS</a></li>
+          <li><a href="/#menu">Our Menu</a></li>
+          <li><a href="timings.html">Store Hours</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <figure>
+        <img
+          src="/Images/Kajju katli.jpg"
+          alt="Kajju Katli"
+          width="200"
+          height="600"
+        />
+        <figcaption><strong>Kajju Katli</strong></figcaption>
+      </figure>
+      <article class="contact-form">
+        <h2 class="contact-form__heading">Our Contact Form</h2>
+        <form
+          action="mailto:abhidograaa19@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <fieldset>
+            <legend>Send Us A Message</legend>
+            <p>
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="your name"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your email"
+                required
+              />
+            </p>
+            <p>
+              <label for="message">Your Message:</label>
+            </p>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+            ></textarea>
+          </fieldset>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+      <article class="location">
+        <h2 class="location__heading">Our Location</h2>
+        <address class="location__address">
+          <p>lane 15 Gol Market Gandhinagar, Jammu</p>
+          <p>Jammu, Jammu & Kashmir</p>
+          <a href="tel:+6006760820">Contact Number</a>
+        </address>
+        <hr />
+      </article>
+      <p class="BTT"><a href="#top">Back to top</a></p>
+    </main>
+    <footer>
+      <p>&nbsp;Copyright&nbsp;&copy;Dogra Sweets</p>
+    </footer>
+  </body>
+</html>

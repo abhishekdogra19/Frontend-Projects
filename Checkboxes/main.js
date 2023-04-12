@@ -1,6 +1,5 @@
 const checkboxes = document.querySelectorAll(`.inbox input[type="checkbox"]`);
 let lastChecked;
-let inBetween = false;
 
 function handleCheck(e) {
   if (e.shiftKey && this.checked) {

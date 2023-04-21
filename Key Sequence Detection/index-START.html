@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+  <script>
+
+    const cheatCode = "family"
+    let arr = []
+    window.addEventListener("keydown", (e) => {
+      console.log(e.key);
+      arr.push(e.key)
+      arr.splice(-cheatCode.length - 1, arr.length - cheatCode.length)
+      if (arr.join("").toLowerCase() === cheatCode) {
+        document.body.style.backgroundColor = "Green"
+      }
+    })
+  </script>
+</body>
+
+</html>
